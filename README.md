@@ -166,10 +166,10 @@ $\frac{\partial L}{\partial O_{1168}} = 2 \times\frac{1}{2}(target_{1168}-O_{116
 #### Output layer
 $\frac{\partial L}{\partial W_{out}} = H_{4}^T \frac{\partial L}{\partial O}$
 
-$\frac{\partial L}{\partial B_{out}} = \sum_{i =1}^{1168}$$ $$\frac{\partial L}{\partial O_{i}}$
+$\frac{\partial L}{\partial B_{out}} = \sum_{i =1}^{1168} \frac{\partial L}{\partial O_{i}}$
 
 #### hidden layer4
-$\frac{\partial L}{\partial H_{4}} = \frac{\partial L}{\partial O}$$ $$W_{out}^T$
+$\frac{\partial L}{\partial H_{4}} = \frac{\partial L}{\partial O} W_{out}^T$
 
 $\frac{\partial L}{\partial H_{3}} = \frac{\partial L}{\partial H_{4}} W_{4}^T$
 
@@ -180,7 +180,7 @@ $\frac{\partial L}{\partial B_{4}} = \frac{\partial L}{\partial H_{4}}$
 #### hidden layer3
 $\frac{\partial L}{\partial H_{3}}$
 
-$\frac{\partial L}{\partial H_{2}} = \frac{\partial L}{\partial H_{3}}$$ $$W_{3}^T$
+$\frac{\partial L}{\partial H_{2}} = \frac{\partial L}{\partial H_{3}} W_{3}^T$
 
 $\frac{\partial L}{\partial W_{3}} = H_{2}^T \frac{\partial L}{\partial H_{3}}$
 
@@ -198,7 +198,7 @@ $\frac{\partial L}{\partial B_{2}} = \frac{\partial L}{\partial H_{2}}$
 #### hidden layer1
 $\frac{\partial L}{\partial H_{1}}$
 
-$\frac{\partial L}{\partial X} = \frac{\partial L}{\partial H_{1}}$$ $$W_{1}^T$
+$\frac{\partial L}{\partial X} = \frac{\partial L}{\partial H_{1}} W_{1}^T$
 
 $\frac{\partial L}{\partial W_{1}} = X^T \frac{\partial L}{\partial H_{1}}$
 $\frac{\partial L}{\partial B_{1}} = \frac{\partial L}{\partial H_{3}}$
