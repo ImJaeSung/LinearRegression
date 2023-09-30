@@ -14,7 +14,7 @@
 #### Missing Value
 - LotFrontage     259
 Alley           1369
-\vdots$
+$\cdots$
 PoolQC           1453
 Fence            1179
 MiscFeature      1406
