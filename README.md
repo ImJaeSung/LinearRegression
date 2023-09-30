@@ -43,6 +43,7 @@ MiscFeature      1406
 - the number of hidden layers = 4
 - activation function = ReLU
 - dropout with prob = 0.2
+
 ![Alt Text](https://thebook.io/img/080263/135_1.jpg)
 
 #### hidden layer1
