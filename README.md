@@ -1,6 +1,6 @@
 # House Prices Prediction task using Neural Network LinearRegression 
 
-##House Prices Prediction
+## House Prices Prediction
 =======================
 ### 0. Data
 - With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.
