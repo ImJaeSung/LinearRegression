@@ -46,7 +46,7 @@ MiscFeature      1406
 ![Alt Text](https://thebook.io/img/080263/135_1.jpg)
 
 #### hidden layer1
-- $h1 : \mathbb{R}^{288}$$ $$\mapsto$$ $$\mathbb{R}^{512}$
+- $h1 : \mathbb{R}^{288}\mapsto\mathbb{R}^{512}$
 - $H^{(1)} = ReLU(XW^{(1)}+B^{(1)})$
 - $W^{(1)} \in {R}^{288\times512}$
 - $B^{(1)})\in {R}^{512}$
@@ -60,7 +60,7 @@ self.hidden_layer1 = nn.Sequential(
 ```
 
 #### hidden layer2
-- $h2 : \mathbb{R}^{512} \mapsto$$ $$\mathbb{R}^{1024}$
+- $h2 : \mathbb{R}^{512} \mapsto\mathbb{R}^{1024}$
 - $H^{(2)} = ReLU(H^{(1)}W^{(2)}+B^{(2)})$
 - $W^{(2)} \in {R}^{512\times1024}$
 - $B^{(2)})\in {R}^{1024}$
@@ -71,7 +71,7 @@ self.hidden_layer2 = nn.Sequential(
 )
 ```
 #### hidden layer3
-- $h3 : \mathbb{R}^{1024} \mapsto$$ $$\mathbb{R}^{1024}$
+- $h3 : \mathbb{R}^{1024} \mapsto\mathbb{R}^{1024}$
 - $H^{(3)} = ReLU(H^{(2)}W^{(3)}+B^{(3)})$
 - $W^{(3)} \in {R}^{1024\times1024}$
 - $B^{(3)})\in {R}^{1024}$
