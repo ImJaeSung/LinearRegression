@@ -1,8 +1,8 @@
 # House Prices Prediction task using Neural Network LinearRegression 
 
-House Prices Prediction
+##House Prices Prediction
 =======================
-# 0. Data
+### 0. Data
 - With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this competition challenges you to predict the final price of each home.
 - Data fields : https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/data
 #### Shape of data
@@ -14,7 +14,7 @@ House Prices Prediction
 #### Missing Value
 - LotFrontage     259
 Alley           1369
-$$\vdots$$
+\vdots$
 PoolQC           1453
 Fence            1179
 MiscFeature      1406
@@ -25,7 +25,7 @@ MiscFeature      1406
 - categorical
 - ![category.png](https://www.dropbox.com/scl/fi/ztp9upk525e491x7xlqiq/category.png?rlkey=qrk9800h96ih318fq5u0mtsvp&dl=0&raw=1)
  
-# 1. Data-Preprocessing
+### 1. Data-Preprocessing
 #### Drop columns 
 - ID
 #### Missing Value 
@@ -39,7 +39,7 @@ MiscFeature      1406
 ![boxplot.png](https://www.dropbox.com/scl/fi/3iugsjgfhzjc5tc6ndkja/boxplot.png?rlkey=246bubzaqh18nxqrvdopdru2n&dl=0&raw=1)
 
 
-# 2. Modeling
+### 2. Modeling
 - the number of hidden layers = 4
 - activation function = ReLU
 - dropout with prob = 0.2
@@ -115,7 +115,7 @@ self.output_layer = nn.Sequential(
 #### Dropout
 ![Alt text](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbv1pFt%2Fbtq1ZMTLNSD%2FfpYC8x7Q5kSCNKdyXk8JfK%2Fimg.png)
 
-# 4. Training
+### 3. Training
 - epoch = 3000
 - learning rate = 0.001
 - optimizer = Adam
@@ -216,14 +216,14 @@ h_{1168,1} & h_{1168,2} & \cdots & h_{1168,512} \\
 #### Mean of Validation score
 ![valid score.png](https://www.dropbox.com/scl/fi/4u1d45ms9ohkq3rucz7lg/valid-score.png?rlkey=18atsecvk7w3ydk3e11730b4i&dl=0&raw=1)
 
-# 5. Prediction
+### 4. Prediction
 - Average of best model predictions for each fold
 - validation set score : 0.0146
 - report score from kaggle : 0.13443
 - Evaluation metric : RMSE
 
 
-##### 2. Regression using neural network
+##### Regression using neural network
 - Deep learning requires calculating complex, high-dimensional composite functions created through a neural network. 
 - It will probably be very difficult.
 - Also, even if calculation is possible, it will require a relatively large amount of calculation. 
