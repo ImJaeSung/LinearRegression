@@ -134,10 +134,14 @@ self.output_layer = nn.Sequential(
 - Adam
 - Momentum + RMSProp
   
-$m_{n} = \beta_{1}m_{n-1}+(1- \beta_{1}) \bigtriangledown \f(x_{n})$
-$v_{n}$$ = \beta_{2}v_{n-1}+(1- \beta_{1}) \bigtriangledownf(x_{n}) \bigodot \bigtriangledownf(x_{n})$
+$m_{n} = \beta_{1}m_{n-1}+(1- \beta_{1}) \bigtriangledown f(x_{n})$
+
+$v_{n} = \beta_{2}v_{n-1}+(1- \beta_{1}) \bigtriangledown f(x_{n}) \bigodot \bigtriangledown f(x_{n})$
+
 $\hat{m_{n}} =  \frac{m_{n}}{1- \beta_{1}^(n+1)}$
+
 $\hat{v_{n}} =  \frac{v_{n}}{1- \beta_{2}^(n+1)}$
+
 $x_{n+1} = x_{n} - learningrate \frac{1}{\sqrt(\hat{v_{n}})}\bigodot \hat{m_{n}}$
 
 #### Learning rate decay
