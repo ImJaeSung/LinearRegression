@@ -166,7 +166,7 @@ $\frac{\partial L}{\partial O_{1168}} = 2 \times\frac{1}{2}(target_{1168}-O_{116
 #### Output layer
 $\frac{\partial L}{\partial W_{out}} = H_{4}^T \frac{\partial L}{\partial O}$
 
-$\frac{\partial L}{\partial B_{out}} = \sum_{i=1}^{1168} \frac{\partial L}{\partial O_{i}}$
+$\frac{\partial L}{\partial B_{out}} = \sum_{i=1}^{1168}\frac{\partial L}{\partial O_{i}}$
 
 #### hidden layer4
 $\frac{\partial L}{\partial H_{4}} = \frac{\partial L}{\partial O} W_{out}^T$
